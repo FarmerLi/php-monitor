@@ -29,10 +29,10 @@
 
 - uprofiler,xhprof,tideways等扩展（安装多个会有冲突，默认安装tideways）
 - composer
-- PHP 5.6+
+- PHP 8.1+
 
 ## tideways扩展安装
-如果使用PHP 5.6，请下载tideways v4.1.5。如果使用PHP7+ ，请下载v4.1.7（更高的版本无法显示SQL）。
+如果使用PHP 5.6，请下载tideways v4.1.5。如果使用PHP7+ ，请下载v4.1.7（更高的版本无法显示SQL）。PHP 8.1, 使用v5.0.4
 
 ````bash
 wget --no-check-certificate https://github.com/tideways/php-xhprof-extension/archive/v4.1.7.tar.gz  && tar zxvf v4.1.7.tar.gz && cd php-xhprof-extension-4.1.7 && phpize && ./configure && make && sudo make install

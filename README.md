@@ -30,7 +30,7 @@ English | [简体中文](./README-zh_CN.md)
 ## ⚙️ System requirements
 - uprofiler,xhprof,tideways php extension(default tideways).
 - composer
-- PHP 5.6+
+- PHP 8.1+
 
 # Install tideways extension
 PHP 5.6(download tideways v4.1.5)

@@ -6,28 +6,34 @@ return [
      * default: tideways
      */
     'extension' => 'tideways',
-    // 'save' => [
-    //     'driver'    => 'mysql',
-    //     'host'      => '127.0.0.1:3306',
-    //     'database'  => 'php_monitor',
-    //     'username'  => '',
-    //     'password'  => 'abcd1234',
-    //     'charset'   => 'utf8mb4',
-    //    'options' => [
-    //        1005 => 16777216, //PDO::MYSQL_ATTR_MAX_BUFFER_SIZE and 16M
-    //    ]
-    // ],
-    //  'save' => [
-    //      'driver'    => 'mongodb',
-    //      'host'      => '127.0.0.1:27017',
-    //      'database'  => 'php_monitor',
-    //      'username'  => '',
-    //      'password'  => ''
-    //  ],
-   'save' => [
-       'driver'    => 'sqlite',
-       'database'  =>  dirname(__DIR__).'/db/php_monitor.sqlite3'
-   ],
+    /* mysql config begin
+    'save' => [
+        'driver'    => 'mysql',
+        'host'      => '127.0.0.1:3306',
+        'database'  => 'php_monitor',
+        'username'  => '',
+        'password'  => 'abcd1234',
+        'charset'   => 'utf8mb4',
+       'options' => [
+           1005 => 16777216, //PDO::MYSQL_ATTR_MAX_BUFFER_SIZE and 16M
+       ]
+    ],
+    mysql config end */
+    /* mongodb config begin
+    'save' => [
+        'driver'    => 'mongodb',
+        'host'      => '127.0.0.1:27017',
+        'database'  => 'php_monitor',
+        'username'  => '',
+        'password'  => ''
+    ],
+    mongodb config end */
+    /* sqlite config begin */
+    'save' => [
+        'driver'    => 'sqlite',
+        'database'  =>  dirname(__DIR__).'/db/php_monitor.sqlite3'
+    ],
+    /* sqlite config end */
     'profiler' => [
         'enable' => function() {
             return true;//rand(1, 100) > 0;
