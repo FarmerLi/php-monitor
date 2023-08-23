@@ -6,7 +6,7 @@ A free, flexible, powerful tool that helps you monitor PHP Service and profiling
 
 [![Latest Stable Version](https://poser.pugx.org/laynefyc/php-monitor/v/stable.png)](https://packagist.org/packages/laynefyc/php-monitor)
 [![Total Downloads](https://poser.pugx.org/laynefyc/php-monitor/downloads.png)](https://packagist.org/packages/laynefyc/php-monitor)
-[![Build Status](https://travis-ci.org/laynefyc/php-monitor.svg?branch=master)](https://travis-ci.org/laynefyc/php-monitor)
+[![Build Status](https://travis-ci.org/farmerli/php-monitor.svg?branch=master)](https://travis-ci.org/farmerli/php-monitor)
 
 </div>
 

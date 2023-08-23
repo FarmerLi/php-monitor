@@ -15,7 +15,7 @@ final class PMonitorTest extends TestCase
 		$_SERVER['SERVER_NAME'] = '127.0.0.1';
 		$this->assertTrue(PMonitor::shutdown());
 	}
-	
+
 	public function testApi(){
 		$db = new SqliteMonitor();
 		$rtn = $db->getList(['pageSize'=>1,'current'=>1]);

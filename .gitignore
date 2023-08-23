@@ -2,3 +2,5 @@
 /.idea/
 /.vscode/
 .DS_Store
+src/config/config.php
+src/db/php_monitor.sqlite3
