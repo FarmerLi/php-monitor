@@ -12,7 +12,8 @@ class PMonitor{
             ini_set('display_errors',1);
         }
         //filter request
-        if(!$config['profiler']['enable']
+        // 修复 $config['profiler']['enable'] 配置不生效问题
+        if(!(is_callable($config['profiler']['enable']) && call_user_func($config['profiler']['enable']))
          || in_array($_SERVER['DOCUMENT_ROOT'],$config['profiler']['filter_path'])){
             self::$filter = true;
             return true;

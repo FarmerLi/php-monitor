@@ -36,6 +36,10 @@ return [
     /* sqlite config end */
     'profiler' => [
         'enable' => function() {
+            // 排除当前监控项目
+            if (strpos(__DIR__, $_SERVER['DOCUMENT_ROOT']) === 0) {
+                return false;
+            }
             return true;//rand(1, 100) > 0;
         },
         'filter_path' => [
